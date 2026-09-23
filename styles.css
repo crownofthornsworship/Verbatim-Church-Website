@@ -36,8 +36,8 @@ h1 em,h2 em{color:transparent;-webkit-text-stroke:1.5px var(--white);paint-order
 @media(max-width:900px){.site-header nav a.active-nav{text-decoration:none!important;border-bottom:4px solid #fff;padding-bottom:.22em;width:max-content;max-width:100%}}
 
 /* Homepage photo update and open-Bible teaching watermark */
-.hero>img[src*="church-exterior"]{object-position:center center;filter:saturate(.9) contrast(1.03)}
+.hero>img[src*="church-community-entry"]{object-position:center center;filter:saturate(.9) contrast(1.03)}
 .teaching{overflow:hidden;isolation:isolate}
 .teaching:after{content:"";position:absolute;right:1.5%;bottom:2%;width:min(680px,52vw);height:48%;background:url('assets/open-bible-silhouette.svg') center/contain no-repeat;opacity:.16;z-index:0;pointer-events:none}
-.teaching>*{position:relative;z-index:1}
-@media(max-width:900px){.hero>img[src*="church-exterior"]{object-position:48% center}.teaching:after{right:4%;bottom:11%;width:92%;height:34%;opacity:.12}}
+.teaching-copy{position:relative;z-index:1}.teaching>.verse-card{position:absolute;z-index:1}
+@media(max-width:900px){.hero>img[src*="church-community-entry"]{object-position:36% center}.teaching:after{right:4%;bottom:11%;width:92%;height:34%;opacity:.12}}
