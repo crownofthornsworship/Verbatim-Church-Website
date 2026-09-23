@@ -41,3 +41,6 @@ h1 em,h2 em{color:transparent;-webkit-text-stroke:1.5px var(--white);paint-order
 .teaching:after{content:"";position:absolute;right:1%;bottom:1%;width:min(780px,60vw);height:60%;background:url('assets/open-bible-silhouette.svg') center/contain no-repeat;opacity:.23;z-index:0;pointer-events:none}
 .teaching-copy{position:relative;z-index:1}.teaching>.verse-card{position:absolute;z-index:1}
 @media(max-width:900px){.hero>img[src*="church-community-entry"]{object-position:36% center}.teaching:after{right:1%;bottom:10%;width:98%;height:52%;opacity:.21}}
+
+/* Keep the long ministries banner headline inside narrow screens */
+@media(max-width:600px){.feature-banner h2{font-size:clamp(2.15rem,10.5vw,3.5rem);max-width:100%;letter-spacing:-.045em}.feature-banner h2 em{white-space:nowrap}}
