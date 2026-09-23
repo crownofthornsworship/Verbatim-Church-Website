@@ -31,3 +31,6 @@ h1 em,h2 em{color:transparent;-webkit-text-stroke:1.5px var(--white);paint-order
 .site-header .brand:before{content:"";position:absolute;left:-5px;top:50%;width:66px;height:66px;transform:translateY(-50%);z-index:0;background:linear-gradient(145deg,rgba(8,9,11,.96),rgba(39,45,51,.82));border:1px solid rgba(255,255,255,.9);box-shadow:0 5px 18px rgba(0,0,0,.38);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 .site-header .brand-logo,.site-header .brand>span{position:relative;z-index:1}
 .site-header .brand-logo{border-color:transparent}
+
+/* Keep the active mobile menu marker below multiline labels */
+@media(max-width:900px){.site-header nav a.active-nav{text-decoration:none!important;border-bottom:4px solid #fff;padding-bottom:.22em;width:max-content;max-width:100%}}
